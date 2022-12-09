@@ -5,7 +5,7 @@ let dia = Number(document.getElementById("inpDia").value) ;
 let english = Number(document.getElementById("inpEnglish").value);
 
 
-tinhDTB = (...diem) => {
+let tinhDTB = (...diem) => {
     let dtb = 0;
     let tong = 0;
     diem.map((item,index) => { 
@@ -19,7 +19,7 @@ tinhDTB = (...diem) => {
 
 
 
-hienThi1 = ()  => {
+let hienThi1 = ()  => {
     console.log("kg");
     let toan = Number(document.getElementById("inpToan").value) ;
     let ly = Number(document.getElementById("inpLy").value) ;
@@ -29,7 +29,7 @@ hienThi1 = ()  => {
     document.getElementById("tbKhoi1").innerHTML = dtbk1.toFixed(2);
 }
 
-hienThi2 = () => {
+let hienThi2 = () => {
     let van = Number(document.getElementById("inpVan").value) ;
     let su = Number(document.getElementById("inpSu").value) ;
     let dia = Number(document.getElementById("inpDia").value) ;

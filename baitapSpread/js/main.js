@@ -1,4 +1,4 @@
-jumpText = () => {
+let jumpText = () => {
     let str = document.querySelector(".heading").innerHTML ;
     console.log(str);
     let char = [...str];

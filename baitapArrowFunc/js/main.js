@@ -1,6 +1,6 @@
 const colorList = ["pallet", "viridian", "pewter", "cerulean", "vermillion", "lavender","celadon","saffron","fuschia","cinnabar"];
 
-loadColor = () => {
+let loadColor = () => {
     let content = "";
     for (const value of colorList) {
         content += `
@@ -13,7 +13,7 @@ loadColor = () => {
 loadColor();
 
 let color_click = "";
-changeColor = (color) => {
+let changeColor = (color) => {
     loadColor();
     if (color_click != "") document.getElementById("house").classList.toggle(color_click); 
     document.querySelector(`.${color}`).classList.add("active");
